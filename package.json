@@ -10,11 +10,11 @@
     "Other"
   ],
   "activationEvents": [],
-  "main": "./extension.js",
+  "main": "./src/backend/extension.js",
   "contributes": {
     "commands": [{
-      "command": "vsnudge.helloWorld",
-      "title": "Hello World"
+      "command": "vsnudge.openFrontend",
+      "title": "Open Frontend"
     }]
   },
   "scripts": {
