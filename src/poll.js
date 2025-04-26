@@ -12,11 +12,11 @@ async function getCurrentFileText() {
 }
 
 function startPolling() {
-    setInterval(async () => {
-        const text = await getCurrentFileText();
-        console.log('Current file text:', text);
-        vscode.window.showInformationMessage('Current file text:', text);
-    }, 10000); // 5000ms = 5 seconds
+    // setInterval(async () => {
+    //     const text = await getCurrentFileText();
+    //     console.log('Current file text:', text);
+    //     //vscode.window.showInformationMessage('Current file text:', text);
+    // }, 10000); // 5000ms = 5 seconds
 }
 
 module.exports = {
