@@ -1,5 +1,6 @@
 const vscode = require('vscode');
 const ClippyPanel = require('./webview/clippyPanel');
+const { startPolling } = require('./poll.js');
 
 function activate(context) {
   let disposable = vscode.commands.registerCommand('vsnudge.showClippy', () => {
@@ -7,6 +8,8 @@ function activate(context) {
   });
 
   context.subscriptions.push(disposable);
+  startPolling();
+
 }
 
 function deactivate() {}
