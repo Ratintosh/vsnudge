@@ -18,7 +18,6 @@ function show(context) {
     );
 
     panel.webview.html = getClippyHtml(context, panel.webview);
-
     panel.onDidDispose(() => {
       panel = undefined;
     }, null, context.subscriptions);
